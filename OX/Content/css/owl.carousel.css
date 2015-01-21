@@ -1,0 +1,104 @@
+/* ======= Owl Navigation ======= */
+.owl-buttons {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: -57px;
+}
+.owl-buttons i {
+  display: none;
+}
+.owl-buttons .owl-prev {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url(../images/car_left.png) no-repeat center #000000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.owl-buttons .owl-prev:hover {
+  background-color: #5f5f5f;
+}
+.owl-buttons .owl-next {
+  display: inline-block;
+  margin-left: 5px;
+  width: 26px;
+  height: 26px;
+  background: url(../images/car_right.png) no-repeat center #000000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.owl-buttons .owl-next:hover {
+  background-color: #5f5f5f;
+}
+/* ======= Owl Item ======= */
+#owl {
+  margin-top: -3px;
+}
+#owl .item .divider {
+  margin: 31px 0 32px;
+  height: 1px;
+  width: 100%;
+  background: url(../images/dashed-border.png) repeat-x left top;
+}
+@media (max-width: 767px) {
+  #owl {
+    margin-bottom: 100px;
+  }
+}
+/* ======= Owl Common Styles ======= */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+.owl-carousel .owl-item {
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}

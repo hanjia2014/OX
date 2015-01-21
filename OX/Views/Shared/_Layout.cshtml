@@ -1,0 +1,156 @@
+﻿@{
+    ViewBag.Title = "OrientXpress";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64, R0lGODlhGQAZAOb/AH+q1YSu14Wu15q935i83qTE4ydhjShijitlkCxmkTJnjzRpkTBqlDJsljNt
+                            lzRumDNtljBmjTVvmTFnjjhym0J8ozlqjUFylEp3llKAnGaJnWuNoVl7jWKElWqEj4Wdp4WdpnyU
+                            nHKKkYyiqJyusJ6trZeloqmzrLuwkb2ylMK3mb+0ltjOstbMsNvRtdnPs9zSt+HXvODWu93TuOTa
+                            v+LYvenfxOjfx7mtj72xk8C0lsK2mcW5nMm9oMq/os3CpdLHqs7Dp9LHq9DFqdfMsODVut/Uud7T
+                            uObcwuXbwcDAwOvhx+rgxunfxejexOvhyOrgx+PYvgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+                            BAEAAEoALAAAAAAZABkAQAfWgEqCg4SFhoeENAoGBjkpKz5EQ4wAMIiDMBAGlU4mjIwqL06XpKWm
+                            gk4fGxUFo6QwlJaYDpuyhUhCHgsNHTssrqfBwoNMJRifyAG2iLC1hM2VpdCWTowHB86GTCPYjAgE
+                            MEwxQD0/LsCHTDRGR1FNw/Dx8oNQN09KTB8ayAMypUwgkBnggAJHrFJGKA2BMcPdNGkHMWGL9iqi
+                            EhsZJGS7NG3JiQmfLPDwl47EBQYPDAiA4aSFCA4cQtlAhCSEgQgGElAYiS9JDRrvLjEpEmSHDh/n
+                            5skLBAA7" />
+    <title>@ViewBag.Title</title>
+
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="~/Content/css/grid.css">
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <script src="~/Scripts/js/jquery-1.11.1.js"></script>
+    <script src="~/Scripts/js/jquery-migrate-1.2.1.js"></script>
+    <script src="~/Scripts/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl").owlCarousel({
+                items: 1, //10 items above 1000px browser width
+                itemsDesktop: [1199, 1], //5 items between 1000px and 901px
+                itemsDesktopSmall: [767, 1], // betweem 900px and 601px
+                itemsTablet: [700, 1], //2 items between 600 and 0
+                itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+                navigation: true,
+                pagination: false
+            });
+        });
+    </script>
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/vendor/angular.min.js"></script>
+    <script src="~/Scripts/app/app.js"></script>
+    <script src="~/Scripts/app/musicianService.js"></script>
+    <script src="~/Scripts/app/newsService.js"></script>
+    <script src="~/Scripts/app/homeCtrl.js"></script>
+</head>
+<body ng-app="oxApp" ng-controller="homeCtrl">
+    
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="socials-block">
+                        <ul class="socials1">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="stuck_container">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <h1>
+                            <a href="#">OrientXpress</a>
+                        </h1>
+                        <nav>
+                            <ul class="sf-menu">
+                                <li class="current">
+                                    <a href="index.html">Home</a>
+                                    <ul>
+                                        <li><a href="#">Scingraesent</a></li>
+                                        <li>
+                                            <a href="#">Lum molestie</a>
+                                            <ul>
+                                                <li><a href="#">Pellentesque</a></li>
+                                                <li><a href="#">Aliquam</a></li>
+                                                <li><a href="#">Mauris</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Aenean non</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index-1.html">Reviews</a></li>
+                                <li><a href="index-2.html">Gallery</a></li>
+                                <li><a href="index-3.html">Blog</a></li>
+                                <li><a href="index-4.html">Contacts</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <section id="content">
+        @RenderBody()
+    </section>
+
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_6">
+                        <div class="privacy-block">
+                            <span id="copyright-year"></span> &copy; <a href="index-5.html">Privacy Policy</a>
+                            <!--{%FOOTER_LINK} -->
+                        </div>
+                    </div>
+                    <div class="grid_6">
+                        <div class="info-block">
+                            <span><a href="#">Support</a></span>
+                            <span><a href="#">FAQs</a></span>
+                            <span><a href="#">Sitemap</a></span>
+                            <span><a href="#">Help</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/Scripts/js/script.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7078796-5']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();</script>
+</body>
+</html>

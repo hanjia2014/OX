@@ -1,0 +1,5 @@
+C:\Projects\OrientXpress_2015\OX\Template\bin\Template.dll
+C:\Projects\OrientXpress_2015\OX\Template\bin\Template.pdb
+C:\Projects\OrientXpress_2015\OX\Template\obj\Debug\Template.csprojResolveAssemblyReference.cache
+C:\Projects\OrientXpress_2015\OX\Template\obj\Debug\Template.dll
+C:\Projects\OrientXpress_2015\OX\Template\obj\Debug\Template.pdb

@@ -1,0 +1,1 @@
+﻿var oxApp = angular.module('oxApp', []);
