@@ -23,6 +23,7 @@
     newsService.GetAllNews().success(function (data) {
         allNews = data;
         $scope.chunkedNewsData = chunk(allNews, 2);
+        $scope.newsCollection = data;
     });
 
     function chunk(arr, size) {
