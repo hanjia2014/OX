@@ -11,6 +11,7 @@ namespace OX.Models
         public DbSet<Music> Musics { get; set; }
         public DbSet<Photo> Photos { get; set; }
         public DbSet<Video> Videos { get; set; }
+        public DbSet<Album> Albums { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
