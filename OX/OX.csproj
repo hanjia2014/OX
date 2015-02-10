@@ -173,6 +173,7 @@
     <Content Include="Areas\Administration\Views\Albums\Edit.cshtml" />
     <Content Include="Areas\Administration\Views\Albums\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\app\directives.js" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\menuItemsCtrl.js" />
     <Content Include="Scripts\app\newsService.js" />
