@@ -29,7 +29,10 @@ namespace OX.Areas.Administration.Controllers
         // GET: Photos
         public ActionResult Index()
         {
-            return View(db.Photos.ToList());
+            var photoList = db.Photos.ToList();
+            var albumList = db.Albums.ToList();
+            photoList.ForEach(p => p.Album = albumList.Find(a => a.Id == p.AlbumId));
+            return View(photoList);
         }
 
         // GET: Photos/Details/5

@@ -99,25 +99,15 @@
                                 <h2>News</h2>
                             </div>
                             <div id="owl">
-                                <div data-ng-repeat="item in newsCollection">
+                                @*<div data-ng-repeat="item in newsCollection">
                                     <news-preview title="{{item.Title}}" date="{{item.Date}}" content="{{item.Content}}" ></news-preview>
-                                </div>
-                                @*<div class="item">
+                                </div>*@
+
+                                
+
+                                <div class="item" data-ng-repeat="item in newsCollection">
                                     <div class="post1">
                                         <time datetime="2014-01-01">09.08.2013</time>
-                                        <h3>
-                                            <a href="#">Lorem ipsum dolor sit amet, consec teer adipiscing. Prsent vestibulum</a>
-                                        </h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consec tetuer adipi
-                                            scing. Praesent vestibu.  lum molestie lacuiirhs. Aenean non ummy hendreriauris. Phasellllus.
-                                        </p>
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    <div class="post1">
-                                        <time class="time__color1" datetime="2014-01-01">09.07.2013</time>
                                         <h3>
                                             <a href="#">Lorem ipsum dolor sit amet, consec teer adipiscing. Prsent vestibulum</a>
                                         </h3>
@@ -151,7 +141,8 @@
                                             scing. Praesent vestibu. lum molestie lacuiirhs. Aenean non ummy hendreriauris. Phasellllus.
                                         </p>
                                     </div>
-                                </div>*@
+                                </div>
+
                             </div>
                         </div>
                         <div class="grid_1">
